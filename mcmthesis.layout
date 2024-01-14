@@ -1,0 +1,101 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[mcmthesis]{mcm thesis template}
+#
+# Author: oldoldstone@gmail.com
+# Date: 2024-01-14
+# ----------------------------------------------------------------------
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+
+# Read the definitions from book.layout
+Input article.layout
+
+
+
+NoStyle LyX-Code
+NoStyle Address
+NoStyle Right_Address
+
+
+Style Abstract
+        InTitle               1
+End
+
+Style Keywords
+  Margin    First_Dynamic
+  LatexType Environment
+  LatexName keywords
+  Category  FrontMatter
+  InTitle   1
+  NextNoIndent  1
+  LeftMargin  MMM
+  RightMargin MMM
+  ParIndent ""
+  ItemSep   0
+  TopSep    1.2
+  BottomSep 0.7
+  ParSep    0
+  Align   Block
+  LabelType static
+  LabelString "Key words."
+  LabelSep  M
+  LabelBottomSep  0
+  Font
+    Size    Small
+  EndFont
+  LabelFont
+    Family  Sans
+    Series  Bold
+    Size    Small
+  EndFont
+End
+
+Style Letter
+  Margin    First_Dynamic
+  LatexType Environment
+  LatexName letter
+  Argument 1
+    LabelString "Recipient"
+    Tooltip ""
+    Mandatory 1
+    DefaultArg  "!"
+    AutoInsert  1
+  EndArgument
+  InTitle   0
+  NextNoIndent  1
+  LeftMargin  MMM
+  RightMargin MMM
+  ParIndent ""
+  ItemSep   0
+  TopSep    1.2
+  BottomSep 0.7
+  ParSep    0
+  Align   Block
+  LabelType None
+  Font
+    Size    Small
+  EndFont
+  LabelFont
+    Family  Sans
+    Series  Bold
+    Size    Small
+  EndFont
+End
+
+
+
+

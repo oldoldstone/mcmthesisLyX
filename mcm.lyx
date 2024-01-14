@@ -1,0 +1,932 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mcmthesis
+\begin_preamble
+\mcmsetup{CTeX = false,   % 使用 CTeX 套装时，设置为 true
+        tcn = 0000, problem = A,
+        sheet = true, titleinsheet = true, keywordsinsheet = true,
+        titlepage = true, abstract = true}
+\usepackage{newtxtext}
+\usepackage{lipsum}
+%\usepackage{palatino}  
+ 
+\renewcommand\appendix{\appendixpage
+  \setcounter{section}{0}%
+  \setcounter{subsection}{0}% 
+  \gdef\thesection{\appendixname\;\@Alph\c@section}}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-std
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package none
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfborder = 000"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\biblio_options square,comma,sort&compress
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style british
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The \SpecialChar LaTeX
+ Template for MCM Version
+\end_layout
+
+\begin_layout Author
+TEAM 0000
+\end_layout
+
+\begin_layout Date
+January 14, 2024 
+\end_layout
+
+\begin_layout Abstract
+Use this template to begin typing the first page (summary page) of your
+ electronic report.
+ This template uses a 12-point Times New Roman font.
+ Submit your paper as an Adobe PDF electronic file (e.g.
+ 1111111.pdf), typed in English, with a readable font of at least 12-point
+ type.
+\end_layout
+
+\begin_layout Abstract
+Do not include the name of your school, advisor, or team members on this
+ or any page.
+\end_layout
+
+\begin_layout Abstract
+Papers must be within the 25 page limit.
+\end_layout
+
+\begin_layout Abstract
+Be sure to change the control number and problem choice above.
+ You may delete these instructions as you begin to type your report here.
+\end_layout
+
+\begin_deeper
+\begin_layout Keywords
+keyword1; keyword2
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+What's this all about? What's \SpecialChar LaTeX
+?
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LaTeX
+ is a document preparation system which uses the \SpecialChar TeX
+ typesetting program.
+ It enables you to produce publication-quality documents with great accuracy
+ and consistency.
+ \SpecialChar LaTeX
+ works on any computer and produces industry-standard PDF.
+ It is available both in free (open-source) and commercial implementations.
+ \SpecialChar LaTeX
+ can be used for any kind of document, but it is especially suited to those
+ with complex structures, repetitive formatting, or notations like mathematics.
+ Install the software from 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+www.tug.org/texlive/
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "knuth1986texbook,dixit2021airport"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Creating and typesetting your document
+\end_layout
+
+\begin_layout Subsection
+Syntax (how to type \SpecialChar LaTeX
+ commands --- these are the rules)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the angular velocity of the bat, 
+\end_layout
+
+\begin_layout Itemize
+the velocity of the ball, and 
+\end_layout
+
+\begin_layout Itemize
+the position of impact along the bat.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[4]
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+center of percussion
+\emph default
+ [Brody 1986], 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[5]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem
+\SpecialChar LaTeX
+
+\end_layout
+
+\begin_layout Lemma
+\SpecialChar TeX
+
+\end_layout
+
+\begin_layout Proof
+The proof of theorem.
+\end_layout
+
+\begin_layout Subsection
+Other Assumptions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+1
+\end_layout
+
+\begin_layout Itemize
+2
+\end_layout
+
+\begin_layout Itemize
+3
+\end_layout
+
+\begin_layout Itemize
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[7]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Analysis of the Problem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/example-image-a.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:aa"
+
+\end_inset
+
+The name of figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[8]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:aa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a^{2}\label{eq:aa}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}{*{20}c}{a_{11}} & {a_{12}} & {a_{13}}\\
+{a_{21}} & {a_{22}} & {a_{23}}\\
+{a_{31}} & {a_{32}} & {a_{33}}
+\end{pmatrix}=\frac{{Opposite}}{{Hypotenuse}}\cos^{-1}\theta\arcsin\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[9]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{j}=\begin{cases}
+0, & \text{if \ensuremath{j} is odd}\\
+r!\,(-1)^{j/2}, & \text{if \ensuremath{j} is even}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[10]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\arcsin\theta=\mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu \bigodot}\limits _{\varphi}{\mathop{\lim}\limits _{x\to\infty}\frac{{n!}}{{r!\left({n-r}\right)!}}}\eqno(1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calculating and Simplifying the Model 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[11]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+The Model Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Validating the Model
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[9]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+A Summary
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Evaluate of the Mode
+\end_layout
+
+\begin_layout Section
+Strengths and weaknesses
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[12]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Strengths
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Applies widely
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+This system can be used for many types of airplanes, and it also solves
+ the interference during the procedure of the boarding airplane,as described
+ above we can get to the optimization boarding time.We also know that all
+ the service is automate.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Improve the quality of the airport service
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Balancing the cost of the cost and the benefit, it will bring in more convenient
+ for airport and passengers.It also saves many human resources for the airline.
+\end_layout
+
+\begin_layout Itemize
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "references"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+First appendix
+\end_layout
+
+\begin_layout Standard
+In addition, your report must include a letter to the Chief Financial Officer
+ (CFO) of the Goodgrant Foundation, Mr.
+ Alpha Chiang, that describes the optimal investment strategy, your modeling
+ approach and major results, and a brief discussion of your proposed concept
+ of a return-on-investment (ROI).
+ This letter should be no more than two pages in length.
+\end_layout
+
+\begin_layout Letter
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Dear, Mr.
+ Alpha Chiang
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Letter
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1-2]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Letter
+Sincerely yours,
+\end_layout
+
+\begin_layout Letter
+Your friends
+\end_layout
+
+\begin_layout Standard
+Here are simulation programmes we used in our model as follow.
+\end_layout
+
+\begin_layout Section
+Second appendix
+\end_layout
+
+\begin_layout Standard
+some more text
+\series bold
+\color red
+ Input C++ source:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//============================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+// Name        : Sudoku.cpp
+\end_layout
+
+\begin_layout Plain Layout
+
+// Author      : wzlf11
+\end_layout
+
+\begin_layout Plain Layout
+
+// Version     : a.0
+\end_layout
+
+\begin_layout Plain Layout
+
+// Copyright   : Your copyright notice
+\end_layout
+
+\begin_layout Plain Layout
+
+// Description : Sudoku in C++.
+\end_layout
+
+\begin_layout Plain Layout
+
+//============================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <iostream>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <cstdlib>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <ctime>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+using namespace std;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int table[9][9];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    for(int i = 0; i < 9; i++){
+\end_layout
+
+\begin_layout Plain Layout
+
+        table[0][i] = i + 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    srand((unsigned int)time(NULL));
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    shuffle((int *)&table[0], 9);
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(!put_line(1))
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+        shuffle((int *)&table[0], 9);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+    for(int x = 0; x < 9; x++){
+\end_layout
+
+\begin_layout Plain Layout
+
+        for(int y = 0; y < 9; y++){
+\end_layout
+
+\begin_layout Plain Layout
+
+            cout << table[x][y] << " ";
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\end_layout
+
+\begin_layout Plain Layout
+
+        cout << endl;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
